@@ -16,9 +16,9 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <title>News homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="assets/scripts/script.js"></script>
-    <title>News homepage</title>
     <script>
       tailwind.config = {
         theme: {
@@ -32,14 +32,14 @@
               veryDarkBlue: "hsl(240, 100%, 5%)",
             },
             fontFamily: {
-              Inter: "Inter",
+              inter: "Inter",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="font-Inter">
+  <body class="font-inter">
     <!-- header section -->
     <header class="min-w-full">
       <!-- header container -->
@@ -54,6 +54,7 @@
 
         <nav aria-label="main navigation" class="flex">
           <button
+            aria-expanded="false"
             aria-label="hamburger menu button"
             id="menuBtn"
             class="cursor-pointer border-none bg-transparent lg:hidden block z-40"
@@ -66,6 +67,7 @@
           </button>
 
           <ul
+            aria-hidden="true"
             id="menu-list"
             class="lg:flex hidden lg:flex-row flex-col items-center lg:h-0 gap-10 text-md lg:p-0 pt-32 text-darkGrayishBlue lg:static h-screen absolute top-0 right-0 z-10 w-3/5 lg:bg-none bg-white"
           >
@@ -109,7 +111,7 @@
       </div>
     </header>
     <!-- main content  -->
-    <section id="main-content" class="mb-16">
+    <main id="main-content" class="mb-16">
       <div
         class="container grid lg:grid-cols-3 grid-cols-1 gap-y-14 lg:gap-6 mx-auto lg:px-18 xl:px-32 px-5"
       >
@@ -166,7 +168,7 @@
               <h3 class="text-offWhite font-bold text-md tracking-tight">
                 Hydrogen VS Electric Cars
               </h3>
-              <p class="text-grayishBlue text-sm leading-relaxed text-sm">
+              <p class="text-grayishBlue text-sm leading-relaxed">
                 Will hydrogen-fueled cars ever catch up to EVs?
               </p>
             </div>
@@ -175,7 +177,7 @@
               <h3 class="text-offWhite font-bold text-md tracking-tight">
                 The Downsides of AI Artistry
               </h3>
-              <p class="text-grayishBlue text-sm leading-relaxed text-sm">
+              <p class="text-grayishBlue text-sm leading-relaxed">
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
@@ -185,7 +187,7 @@
               <h3 class="text-offWhite font-bold tracking-tight">
                 Is VC Funding Drying Up?
               </h3>
-              <p class="text-grayishBlue text-sm leading-relaxed text-sm">
+              <p class="text-grayishBlue text-sm leading-relaxed">
                 Private funding by VC firms is down 50% YOY. We take a look at
                 what that means.
               </p>
@@ -193,7 +195,7 @@
           </aside>
         </div>
       </div>
-    </section>
+    </main>
     <!-- trending articles -->
     <section id="trending-articles">
       <div
