@@ -43,7 +43,7 @@
     <header class="min-w-full">
       <!-- header container -->
       <div
-        class="container mx-auto p-16 md:px-20 lg:px-32 flex justify-between items-center"
+        class="container mx-auto pt-16 px-5 pb-12 lg:px-18 xl:px-32 flex justify-between items-center"
       >
         <!-- logo -->
 
@@ -91,6 +91,92 @@
         </nav>
       </div>
     </header>
+    <!-- main content  -->
+    <section id="main-content">
+      <div
+        class="container grid lg:grid-cols-3 grid-cols-1 gap-y-14 lg:gap-6 mx-auto lg:px-18 xl:px-32 px-5"
+      >
+        <!-- image news -->
+        <div class="md:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- image -->
+
+          <!-- desktop screen -->
+          <img
+            src="assets/images/image-web-3-desktop.jpg"
+            alt=""
+            class="hidden md:block lg:col-span-2 w-full"
+          />
+          <!-- mobile screen -->
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt=""
+            class="md:hidden"
+          />
+
+          <!-- header -->
+          <h1
+            class="lg:text-5xl text-4xl text-veryDarkBlue font-bold tracking-tight"
+          >
+            The Bright Future of Web 3.0?
+          </h1>
+          <!-- paragraph -->
+          <div class="space-y-2">
+            <p class="text-sm text-darkGrayishBlue leading-relaxed">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              class="px-5 py-2.5 text-xs tracking-widest font-bold uppercase bg-softRed"
+            >
+              read more
+            </button>
+          </div>
+        </div>
+        <!-- new news container -->
+        <div class="bg-veryDarkBlue py-6 px-5">
+          <!-- header -->
+
+          <!-- content of new news -->
+          <aside class="grid gap-7">
+            <h2
+              class="text-2xl md:text-3xl text-softOrange font-bold text-left tracking-tight"
+            >
+              New
+            </h2>
+            <div class="space-y-2">
+              <h3 class="text-offWhite font-bold text-md tracking-tight">
+                Hydrogen VS Electric Cars
+              </h3>
+              <p class="text-grayishBlue text-sm leading-relaxed text-sm">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <div class="w-full h-[1px] bg-grayishBlue opacity-50"></div>
+            <div class="space-y-2">
+              <h3 class="text-offWhite font-bold text-md tracking-tight">
+                The Downsides of AI Artistry
+              </h3>
+              <p class="text-grayishBlue text-sm leading-relaxed text-sm">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <div class="w-full h-[1px] bg-grayishBlue opacity-50"></div>
+            <div class="space-y-2">
+              <h3 class="text-offWhite font-bold text-md tracking-tight">
+                Is VC Funding Drying Up?
+              </h3>
+              <p class="text-grayishBlue text-sm leading-relaxed text-sm">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <!-- 
   Home
   New
