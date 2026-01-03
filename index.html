@@ -92,7 +92,7 @@
       </div>
     </header>
     <!-- main content  -->
-    <section id="main-content">
+    <section id="main-content" class="mb-16">
       <div
         class="container grid lg:grid-cols-3 grid-cols-1 gap-y-14 lg:gap-6 mx-auto lg:px-18 xl:px-32 px-5"
       >
@@ -127,7 +127,8 @@
               it really fulfilling its promise?
             </p>
             <button
-              class="px-5 py-2.5 text-xs tracking-widest font-bold uppercase bg-softRed"
+              aria-label="Read More"
+              class="px-5 py-2.5 text-xs tracking-widest font-bold uppercase bg-softRed hover:bg-softOrange transition-all duration-300"
             >
               read more
             </button>
@@ -164,7 +165,7 @@
             </div>
             <div class="w-full h-[1px] bg-grayishBlue opacity-50"></div>
             <div class="space-y-2">
-              <h3 class="text-offWhite font-bold text-md tracking-tight">
+              <h3 class="text-offWhite font-bold tracking-tight">
                 Is VC Funding Drying Up?
               </h3>
               <p class="text-grayishBlue text-sm leading-relaxed text-sm">
@@ -176,44 +177,64 @@
         </div>
       </div>
     </section>
+    <!-- trending articles -->
+    <section id="trending-articles">
+      <div
+        class="container grid lg:grid-cols-3 gap-6 mx-auto lg:px-18 xl:px-32 px-5 pb-5"
+      >
+        <!-- item 1 -->
+        <div class="flex flex-row gap-5">
+          <img
+            src="assets/images/image-retro-pcs.jpg"
+            alt="image-retro-laptops"
+            class="h-40 w-40"
+          />
+          <div class="space-y-4">
+            <div class="text-2xl text-softRed font-bold leading-tight">01</div>
+            <h4 class="text-lg font-bold text-veryDarkBlue tracking-tight">
+              Reviving Retro PCs
+            </h4>
+            <p class="text-sm text-darkGrayishBlue leading-relaxed">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <!-- item 1 -->
+        <div class="flex flex-row gap-5">
+          <img
+            src="assets/images/image-top-laptops.jpg"
+            alt="image-retro-laptops"
+            class="h-40 w-40"
+          />
+          <div class="space-y-4">
+            <div class="text-2xl text-softRed font-bold leading-tight">02</div>
+            <h4 class="text-lg font-bold text-veryDarkBlue tracking-tight">
+              Top 10 Laptops of 2022
+            </h4>
+            <p class="text-sm text-darkGrayishBlue leading-relaxed">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <!-- item 3 -->
 
-    <!-- 
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-   -->
+        <div class="flex flex-row gap-5">
+          <img
+            src="assets/images/image-gaming-growth.jpg"
+            alt="image-gaming-growth"
+            class="h-40 w-40"
+          />
+          <div class="space-y-4">
+            <div class="text-2xl text-softRed font-bold leading-tight">03</div>
+            <h4 class="text-lg font-bold text-veryDarkBlue tracking-tight">
+              The Growth of Gaming
+            </h4>
+            <p class="text-sm text-darkGrayishBlue leading-relaxed">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
