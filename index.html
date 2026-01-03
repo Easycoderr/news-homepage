@@ -17,6 +17,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="assets/scripts/script.js"></script>
     <title>News homepage</title>
     <script>
       tailwind.config = {
@@ -50,8 +51,24 @@
         <img src="assets/images/logo.svg" alt="logo" class="w-12" />
 
         <!-- nav  -->
-        <nav aria-label="main navigation">
-          <ul class="flex flex-row gap-10 text-md text-darkGrayishBlue">
+
+        <nav aria-label="main navigation" class="flex">
+          <button
+            aria-label="hamburger menu button"
+            id="menuBtn"
+            class="cursor-pointer border-none bg-transparent lg:hidden block z-40"
+          >
+            <img
+              src="assets/images/icon-menu.svg"
+              alt="menu icon"
+              class="w-7 h-7"
+            />
+          </button>
+
+          <ul
+            id="menu-list"
+            class="lg:flex hidden lg:flex-row flex-col items-center lg:h-0 gap-10 text-md lg:p-0 pt-32 text-darkGrayishBlue lg:static h-screen absolute top-0 right-0 z-10 w-3/5 lg:bg-none bg-white"
+          >
             <li>
               <a
                 href="#"
@@ -187,13 +204,11 @@
           <img
             src="assets/images/image-retro-pcs.jpg"
             alt="image-retro-laptops"
-            class="h-40 w-40"
+            class="h-36 w-36"
           />
           <div class="space-y-4">
             <div class="text-2xl text-softRed font-bold leading-tight">01</div>
-            <h4 class="text-lg font-bold text-veryDarkBlue tracking-tight">
-              Reviving Retro PCs
-            </h4>
+            <h4 class="font-bold text-veryDarkBlue">Reviving Retro PCs</h4>
             <p class="text-sm text-darkGrayishBlue leading-relaxed">
               What happens when old PCs are given modern upgrades?
             </p>
@@ -204,13 +219,11 @@
           <img
             src="assets/images/image-top-laptops.jpg"
             alt="image-retro-laptops"
-            class="h-40 w-40"
+            class="h-36 w-36"
           />
           <div class="space-y-4">
             <div class="text-2xl text-softRed font-bold leading-tight">02</div>
-            <h4 class="text-lg font-bold text-veryDarkBlue tracking-tight">
-              Top 10 Laptops of 2022
-            </h4>
+            <h4 class="font-bold text-veryDarkBlue">Top 10 Laptops of 2022</h4>
             <p class="text-sm text-darkGrayishBlue leading-relaxed">
               Our best picks for various needs and budgets.
             </p>
@@ -222,13 +235,11 @@
           <img
             src="assets/images/image-gaming-growth.jpg"
             alt="image-gaming-growth"
-            class="h-40 w-40"
+            class="h-36 w-36"
           />
           <div class="space-y-4">
             <div class="text-2xl text-softRed font-bold leading-tight">03</div>
-            <h4 class="text-lg font-bold text-veryDarkBlue tracking-tight">
-              The Growth of Gaming
-            </h4>
+            <h4 class="font-bold text-veryDarkBlue">The Growth of Gaming</h4>
             <p class="text-sm text-darkGrayishBlue leading-relaxed">
               How the pandemic has sparked fresh opportunities.
             </p>
